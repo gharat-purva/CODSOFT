@@ -11,7 +11,8 @@ encouraging your creativity while ensuring a visually appealing and user-friendl
 
 ### **Output :**
 - [Visit Landing Page](https://gharat-purva.github.io/CODSOFT/landing-page/)
-![image](https://github.com/gharat-purva/CODSOFT/assets/143778356/d03dd278-a73b-4361-8a35-711a89773f13)
+  
+  - ![image](https://github.com/gharat-purva/CODSOFT/assets/143778356/d03dd278-a73b-4361-8a35-711a89773f13)
 
 ## Task 2
 
