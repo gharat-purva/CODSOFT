@@ -74,7 +74,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     padding: 100px;
-    margin-top: 80px; /* Adjusted margin-top for sticky header */
+    margin-top: 80px;
 }
 
 #about img,
@@ -114,7 +114,7 @@ header {
     margin: 10px 0;
     font-size: 2em;
     color: #804f82;
-    animation: bounce 1s infinite; /* Animation for the skills icons */
+    animation: bounce 1s infinite; 
 }
 
 @keyframes bounce {
