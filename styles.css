@@ -1,0 +1,194 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #804f82;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+#about {
+    background-color: #f2f2f2;
+    padding: 100%;
+}
+
+#about .text-container {
+    opacity: 0;
+    animation: fadeInText 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#about img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 100px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#about img:hover {
+    transform: scale(1.1) rotateX(15deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#skills,
+#resume {
+    background-color: #d3d3d3;
+    padding: 20px;
+}
+
+#about,
+#skills,
+#resume,
+#contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px;
+    margin-top: 80px; /* Adjusted margin-top for sticky header */
+}
+
+#about img,
+#skills img,
+#resume img,
+#contact img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 100px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#about img:hover,
+#skills img:hover,
+#resume img:hover,
+#contact img:hover {
+    transform: scale(1.1) rotateX(15deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.bio,
+.skills-list,
+.resume-content,
+.contact-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.skills-list i {
+    margin: 10px 0;
+    font-size: 2em;
+    color: #804f82;
+    animation: bounce 1s infinite; /* Animation for the skills icons */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+h2,
+h3 {
+    font-size: 2.5em;
+}
+
+#projects {
+    padding: 40px;
+    background-color: #d3d3d3;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05) rotateX(15deg);
+}
+
+.project h3 {
+    color: #804f82;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1.2em;
+}
+
+.resume-content img,
+.contact-info img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.resume-content img:hover,
+.contact-info img:hover {
+    transform: scale(1.1) rotateX(15deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #804f82;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    font-size: 1.2em;
+}

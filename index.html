@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #resume .image img,
+        #contact .image img {
+            max-width: 100px; /* Adjust the size of the images */
+            height: auto;
+            border-radius: 50%; /* Make the image circular */
+        }
+
+        #overlap-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2; /* Place the icon above other content */
+        }
+
+        /* Give z-index to about and skills sections */
+        #about, #skills {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+    <title>Purva Gharat - Portfolio</title>
+</head>
+<body>
+    <div class="portfolio-card">
+        <header>
+            <div class="logo">Purva Gharat</div>
+            <div class="tagline">Web Developer | Creative Thinker</div>
+        </header>
+        <section id="about">
+            <div class="bio">
+                <h2>About Me</h2>
+                <p>I am a dedicated third-year student at Thakur College of Engineering and Technology pursuing a Bachelor's degree in Computer Engineering, with an anticipated graduation in 2025. Proficient in programming languages such as C, C++, Python, I have a solid foundation in algorithms, data structures, and software development. My academic journey includes coursework in web development, providing me with a comprehensive understanding of computer science principles. I have actively participated in projects, showcasing my practical skills and passion for technology. Eager to contribute my knowledge and enthusiasm to real-world projects, I am seeking opportunities to further enhance my skills in Computers.</p>
+            </div>
+            <div class="image">
+                <img src="profile-image.jpg" alt="Purva Gharat">
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2><br>
+            <div class="skills-list">
+                <i class="fas fa-laptop-code"></i> HTML5
+                <i class="fas fa-paint-brush"></i> CSS3
+                <i class="fab fa-js"></i> JavaScript
+                <i class="fas fa-mobile-alt"></i> Responsive Design<br>
+                <i class="fas fa-code"></i> Web Development
+                <i class="fas fa-database"></i> Database Management
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2><br>
+            <div class="project">
+                <h5>Food Ordering Platform</h5>
+                <p>Proficient in front-end frameworks, back-end technologies, and database management for seamless and robust digital solutions.</p>
+            </div>
+            <div class="project">
+                <h5>Furniture Website</h5>
+                <p>Proficient in front-end aesthetics, back-end functionalities, and database integration, ensuring a seamless and visually appealing platform for showcasing and retailing furniture products.</p>
+            </div>
+        </section>
+        <section id="resume">
+            <div class="resume-content">
+                <h2>Resume</h2>
+                <p>Download my <a href="resume.pdf" target="_blank"><i class="fas fa-download"></i> resume (PDF)</a>.</p>
+            </div>
+            <div class="image">
+                <img src="resume.png" alt="Purva Gharat">
+            </div>
+        </section>
+        <section id="contact">
+            <div class="image">
+                <img src="code.jpg" alt="Purva Gharat">
+            </div>
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <p>Email: 1032210421@tcetmumbai.in</p>
+                <p>Phone: +91 766 622 4610</p>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/purvagharat/">LinkedIn</a>
+                <a href="https://github.com/gharat-purva">GitHub</a>
+            </div>
+            <p>&copy; 2024 Purva Gharat. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
